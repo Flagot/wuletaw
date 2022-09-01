@@ -74,11 +74,11 @@ function activemenu(){
     contact.classList.add('active');
     return;
   } 
-  // if((active1 && window.innerWidth < 700 && scrollpos < 600) || active1){
-  //   active1.classList.remove('active');
-  
-  // }
+  if(window.innerWidth < 700 && active1){
+    active1.classList.remove('active');
+
+  }
 };
 
 window.addEventListener('scroll', activemenu);
-window.addEventListener("click", activemenu); 
+window.addEventListener('click', activemenu); 
